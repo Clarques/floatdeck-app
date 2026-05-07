@@ -1,503 +1,297 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FloatDeck | Elevate Your Workflow with Floating Windows</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Dancing+Script:wght@700&display=swap"
-        rel="stylesheet">
-    <style>
-        :root {
-            --primary: #a78bfa;
-            --primary-hover: #c4b5fd;
-            --bg: #0f172a;
-            --card: #1e293b;
-            --text: #f8fafc;
-            --text-dim: #94a3b8;
-            --accent-purple: #a78bfa;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2rem 0;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 1.5rem;
-            font-weight: 800;
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .logo svg {
-            width: 32px;
-            height: 32px;
-            color: var(--primary);
-        }
-
-        .logo span {
-            color: var(--primary);
-            font-weight: 300;
-        }
-
-        .nav-links a {
-            color: var(--text-dim);
-            text-decoration: none;
-            margin: 0 1rem;
-            font-size: 0.9rem;
-            font-weight: 600;
-            transition: 0.2s;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary);
-        }
-
-        /* CTA Buttons */
-        .cta-button {
-            background: var(--primary);
-            color: #000;
-            padding: 1rem 2rem;
-            border-radius: 14px;
-            font-weight: 800;
-            text-decoration: none;
-            font-size: 1rem;
-            display: inline-block;
-            transition: 0.3s;
-            box-shadow: 0 10px 20px rgba(167, 139, 250, 0.2);
-            border: none;
-            cursor: pointer;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            background: var(--primary-hover);
-            box-shadow: 0 15px 30px rgba(167, 139, 250, 0.3);
-        }
-
-        /* Hero Section (ATTENTION) */
-        .hero {
-            padding: 8rem 0;
-            text-align: center;
-        }
-
-        .beta-tag {
-            font-family: 'Dancing Script', cursive;
-            background: rgba(167, 139, 250, 0.1);
-            color: var(--primary);
-            padding: 4px 15px;
-            border-radius: 100px;
-            font-size: 1.2rem;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            border: 1px solid rgba(167, 139, 250, 0.2);
-        }
-
-        h1 {
-            font-size: 4.5rem;
-            line-height: 1;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.05em;
-            background: linear-gradient(to bottom right, #fff 40%, var(--primary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            color: var(--text-dim);
-            max-width: 600px;
-            margin: 0 auto 3rem;
-        }
-
-        /* Features Section (INTEREST) */
-        .features-section {
-            padding: 6rem 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .section-tag {
-            color: var(--primary);
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            font-weight: 800;
-            letter-spacing: 0.15em;
-            margin-bottom: 1rem;
-            display: block;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            /* FORCED 3 IN A ROW */
-            gap: 1.5rem;
-        }
-
-        .feature-card {
-            background: var(--card);
-            padding: 2.5rem;
-            border-radius: 28px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: 0.3s;
-        }
-
-        .feature-icon {
-            width: 44px;
-            height: 44px;
-            background: rgba(167, 139, 250, 0.1);
-            color: var(--primary);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1.5rem;
-        }
-
-        /* Desire Section (DESIRE) */
-        .desire-section {
-            padding: 8rem 0;
-            background: radial-gradient(circle at center, rgba(167, 139, 250, 0.05) 0%, transparent 70%);
-            text-align: center;
-        }
-
-        .desire-content h2 {
-            font-size: 3rem;
-            letter-spacing: -0.03em;
-            margin-bottom: 1.5rem;
-        }
-
-        .desire-content p {
-            color: var(--text-dim);
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        /* Action Section (ACTION) */
-        .action-section {
-            padding: 8rem 0;
-            text-align: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .action-section h2 {
-            font-size: 3.5rem;
-            margin-bottom: 2rem;
-        }
-
-        /* Collapsible Legal (Accordion) */
-        .accordion {
-            margin: 4rem 0;
-        }
-
-        .accordion-item {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            margin-bottom: 1rem;
-            overflow: hidden;
-        }
-
-        .accordion-header {
-            padding: 1.5rem 2rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 700;
-            transition: 0.2s;
-        }
-
-        .accordion-header:hover {
-            background: rgba(255, 255, 255, 0.05);
-        }
-
-        .accordion-content {
-            padding: 0 2rem;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out, padding 0.3s ease;
-            color: var(--text-dim);
-            font-size: 0.95rem;
-        }
-
-        .accordion-item.active .accordion-content {
-            max-height: 1000px;
-            padding: 1.5rem 2rem;
-        }
-
-        .accordion-item.active .accordion-header {
-            color: var(--primary);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        footer {
-            padding: 4rem 0;
-            text-align: center;
-            color: var(--text-dim);
-            font-size: 0.85rem;
-        }
-
-        @media (max-width: 900px) {
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
-            h1 {
-                font-size: 3rem;
-            }
-
-            .action-section h2 {
-                font-size: 2.5rem;
-            }
-        }
-    </style>
+    <title>FloatDeck | Multi-Task Like a Pro. Without the Chaos.</title>
+    <meta name="description" content="FloatDeck unifies your AI, Code, Tasks and Media into a floating workspace. Stop switching tabs. Start shipping faster.">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/icon-16.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./assets/icons/icon-48.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="./assets/icons/icon-128.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <nav>
+    <!-- ===================== MODALS ===================== -->
+    <div id="modal-privacy" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-privacy-title">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('modal-privacy')" aria-label="Close">&times;</button>
+            <h2 id="modal-privacy-title" data-i18n="modal_privacy_title">Privacy Policy</h2>
+            <div class="modal-body">
+                <p><strong data-i18n="modal_last_updated">Last Updated: May 2026</strong></p>
+                <p data-i18n="modal_privacy_intro">FloatDeck is committed to protecting your privacy. This Privacy Policy explains how we handle your data in compliance with Google Chrome Web Store Developer Program Policies.</p>
+                
+                <p><strong data-i18n="modal_privacy_h1">1. Data Collection and Usage</strong></p>
+                <p data-i18n="modal_privacy_p1">FloatDeck operates on a strict "Privacy by Design" philosophy. We DO NOT collect, store, transmit, or sell any personal information, browsing history, analytics, or user-generated content to any external servers. All operations happen locally on your device.</p>
+                
+                <p><strong data-i18n="modal_privacy_h2">2. Chrome Permissions Justification</strong></p>
+                <p data-i18n="modal_privacy_p2_intro">To provide our core functionality, FloatDeck requires the following minimally-scoped permissions:</p>
+                <ul>
+                    <li data-i18n="modal_privacy_li1"><strong>Tabs & Windows:</strong> Used exclusively to facilitate the floating dashboard functionality and manage your active workspace. We do not track or record the URLs or content of the tabs you visit.</li>
+                    <li data-i18n="modal_privacy_li2"><strong>Storage:</strong> Used strictly to save your user-defined layout presets and theme preferences locally on your device. No data leaves your browser.</li>
+                </ul>
+
+                <p><strong data-i18n="modal_privacy_h3">3. Third-Party Services</strong></p>
+                <p data-i18n="modal_privacy_p3">FloatDeck integrates with third-party tools (like AI assistants or video players) through standard web interfaces. Your interaction with these embedded tools is governed by their respective privacy policies. FloatDeck does not act as a middleman to intercept this data.</p>
+                
+                <p><strong data-i18n="modal_privacy_h4">4. Changes to this Policy</strong></p>
+                <p data-i18n="modal_privacy_p4">We may update this policy occasionally. Any changes will be reflected with an updated date.</p>
+                
+                <p><strong data-i18n="modal_privacy_h5">5. Contact Us</strong></p>
+                <p data-i18n="modal_privacy_p5">For privacy-related inquiries, contact us at: klarkzdev@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-terms" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-terms-title">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('modal-terms')" aria-label="Close">&times;</button>
+            <h2 id="modal-terms-title" data-i18n="modal_terms_title">Terms of Service</h2>
+            <div class="modal-body">
+                <p><strong data-i18n="modal_last_updated">Last Updated: May 2026</strong></p>
+                <p data-i18n="modal_terms_intro">By installing and using FloatDeck, you agree to be bound by these Terms of Service.</p>
+                
+                <p><strong data-i18n="modal_terms_h1">1. License and Usage</strong></p>
+                <p data-i18n="modal_terms_p1">FloatDeck grants you a personal, non-exclusive, non-transferable license to use the extension for personal or internal business productivity purposes. You may not reverse-engineer, distribute, or exploit the extension for commercial gain without explicit permission.</p>
+                
+                <p><strong data-i18n="modal_terms_h2">2. Beta Disclaimer and "As Is" Provision</strong></p>
+                <p data-i18n="modal_terms_p2">FloatDeck is currently in its "Beta" phase. The extension is provided "AS IS" and "AS AVAILABLE", without warranties of any kind, either express or implied. We do not guarantee that the extension will be error-free or uninterrupted.</p>
+                
+                <p><strong data-i18n="modal_terms_h3">3. Limitation of Liability</strong></p>
+                <p data-i18n="modal_terms_p3">In no event shall FloatDeck or its developers be liable for any indirect, incidental, or consequential damages, including loss of data or productivity, arising out of the use or inability to use the extension.</p>
+                
+                <p><strong data-i18n="modal_terms_h4">4. User Responsibilities</strong></p>
+                <p data-i18n="modal_terms_p4">You are responsible for your use of the embedded third-party tools within FloatDeck. You agree not to use the extension for any unlawful activities or to violate the terms of the services you access through our floating windows.</p>
+                
+                <p><strong data-i18n="modal_terms_h5">5. Contact</strong></p>
+                <p data-i18n="modal_terms_p5">If you have any questions about these Terms, please contact: klarkzdev@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <!-- ===================== /MODALS ===================== -->
+
+    <nav class="main-nav">
+        <div class="container nav-inner">
             <a href="#" class="logo">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                 </svg>
                 Float<span>Deck</span>
             </a>
-            <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#item-privacy">Privacy</a>
-                <a href="#item-terms">Terms</a>
-                <a href="mailto:klarkzdev@gmail.com">Support</a>
-            </div>
-            <a href="#" class="cta-button">Get Started</a>
-        </nav>
 
-        <!-- S1: ATTENTION -->
-        <header class="hero">
-            <div class="beta-tag">Limited Beta Access</div>
-            <h1>Your Workflow, <br>Unbound.</h1>
-            <p>Break free from the tab graveyard. Transform any website into a floating, resizable mini-app that stays
-                exactly where you want it.</p>
-            <a href="#" class="cta-button">Add to Chrome — It's Free</a>
-        </header>
-
-        <!-- S2: INTEREST -->
-        <section class="features-section">
-            <span class="section-tag">Powerful Features</span>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="3" y1="9" x2="21" y2="9"></line>
-                            <line x1="9" y1="21" x2="9" y2="9"></line>
-                        </svg>
-                    </div>
-                    <h3>Layout Engine</h3>
-                    <p>One-click presets to snap your windows into perfect Grids, Columns, or Picture-in-Picture modes.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3>App Library</h3>
-                    <p>Save your favorite tools as persistent floating apps. Launch them instantly from your dashboard.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                    </div>
-                    <h3>Pure Privacy</h3>
-                    <p>Local-only architecture. No tracking, no data collection. Your browsing stays private and secure.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- S3: DESIRE -->
-        <section class="desire-section">
-            <div class="desire-content">
-                <span class="section-tag">Productivity Reimagined</span>
-                <h2>Focus on what matters.</h2>
-                <p>Imagine watching a tutorial while coding, or keeping your chat window visible while writing an
-                    email—all without the tab-switching fatigue. FloatDeck makes it effortless.</p>
-            </div>
-        </section>
-
-        <!-- S4: ACTION -->
-        <section class="action-section">
-            <h2>Ready to float?</h2>
-            <a href="#" class="cta-button" style="font-size: 1.5rem; padding: 1.5rem 4rem;">Get FloatDeck Now</a>
-        </section>
-
-        <!-- LEGAL ACCORDION -->
-        <div class="accordion">
-            <div class="accordion-item" id="item-privacy">
-                <div class="accordion-header" onclick="toggleAccordion('item-privacy')">
-                    Privacy Policy
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                </div>
-                <div class="accordion-content">
-                    <p><strong>Last Updated: May 2024</strong></p>
-                    <p>This Privacy Policy describes how FloatDeck ("we", "our", or "the Extension") handles user data.
-                        Our core philosophy is "Privacy by Design".</p>
-
-                    <p><strong>1. Data Handling Transparency</strong><br>
-                        FloatDeck is a local-first application. We do not collect, store, or transmit any personal
-                        information, browsing history, or user-generated content to any external servers. All data
-                        processing occurs strictly within your local browser environment.</p>
-
-                    <p><strong>2. Use of Permissions (Google Limited Use Policy)</strong><br>
-                        In compliance with the Google Chrome Web Store User Data Policy, we declare the use of the
-                        following permissions:</p>
-                    <ul>
-                        <li><strong>Tabs & Windows:</strong> Used exclusively to facilitate the "float" functionality,
-                            allowing the user to detach and reposition browser tabs as independent windows.</li>
-                        <li><strong>Storage:</strong> Used to save user-defined layout presets and App Library shortcuts
-                            locally on the device.</li>
-                    </ul>
-                    <p><em>FloatDeck's use of information received from Google APIs will adhere to the Chrome Web Store
-                            User Data Policy, including the Limited Use requirements.</em></p>
-
-                    <p><strong>3. Third-Party Access</strong><br>
-                        We do not sell, trade, or otherwise transfer your data to outside parties. Since we do not
-                        collect any data, there is no database of user information to share.</p>
-
-                    <p><strong>4. Children's Privacy</strong><br>
-                        Our extension does not address anyone under the age of 13. We do not knowingly collect
-                        identifiable information from children.</p>
-
-                    <p><strong>5. Contact</strong><br>
-                        If you have questions about this policy, contact us at <strong>klarkzdev@gmail.com</strong>.</p>
-                </div>
-            </div>
-
-            <div class="accordion-item" id="item-terms">
-                <div class="accordion-header" onclick="toggleAccordion('item-terms')">
-                    Terms of Service
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                </div>
-                <div class="accordion-content">
-                    <p><strong>1. Acceptance of Terms</strong><br>
-                        By installing and using the FloatDeck Chrome Extension, you agree to be bound by these Terms of
-                        Service and all applicable laws and regulations.</p>
-
-                    <p><strong>2. License to Use</strong><br>
-                        FloatDeck grants you a non-exclusive, non-transferable, revocable license to use the Extension
-                        for personal or internal business purposes. You agree not to:
-                    <ul>
-                        <li>Modify, copy, or create derivative works based on the Extension.</li>
-                        <li>Reverse engineer or attempt to extract the source code.</li>
-                        <li>Use the Extension for any illegal or unauthorized purpose.</li>
-                    </ul>
-                    </p>
-
-                    <p><strong>3. Beta Software Disclaimer</strong><br>
-                        The Extension is currently in "Beta" state. You acknowledge that the software may contain bugs
-                        or errors. The Extension is provided "AS IS" and "AS AVAILABLE" without warranties of any kind,
-                        either express or implied.</p>
-
-                    <p><strong>4. Limitation of Liability</strong><br>
-                        In no event shall FloatDeck or its developers be liable for any damages (including, without
-                        limitation, damages for loss of data or profit, or due to business interruption) arising out of
-                        the use or inability to use the Extension, even if notified of the possibility of such damage.
-                    </p>
-
-                    <p><strong>5. Governing Law</strong><br>
-                        These terms are governed by and construed in accordance with the laws of your jurisdiction, and
-                        you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p>
-
-                    <p><strong>6. Contact Information</strong><br>
-                        For any inquiries regarding these terms, please contact: <strong>klarkzdev@gmail.com</strong>
-                    </p>
-                </div>
+            <div class="nav-actions">
+                <select id="lang-selector" class="lang-selector" aria-label="Select language">
+                    <option value="en">EN</option>
+                    <option value="pt">PT</option>
+                    <option value="es">ES</option>
+                </select>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <span id="theme-icon">🌙</span>
+                </button>
             </div>
         </div>
+    </nav>
 
-        <footer>
-            <p>&copy; 2026 FloatDeck. Elevate your browsing experience.</p>
-        </footer>
-    </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-glow"></div>
+            <div class="container hero-content">
+                <span class="badge" data-i18n="hero_badge">Elevate Your Beta Experience</span>
+                <h1 data-i18n="hero_title">Multi-Task Like a Pro. <span>Without the Chaos.</span></h1>
+                <p class="hero-sub" data-i18n="hero_subtitle">Stop drowning in a sea of tabs. FloatDeck unifies your AI, Code, Tasks, and Media into a single, fluid workspace that floats exactly where you need it.</p>
 
-    <script>
-        function toggleAccordion(id) {
-            const item = document.getElementById(id);
-            if (!item) return;
-            const isActive = item.classList.contains('active');
-
-            // Close all
-            document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
-
-            // Open clicked if it wasn't active
-            if (!isActive) {
-                item.classList.add('active');
-            }
-        }
-
-        // Intelligent Navigation for Legal Links
-        document.querySelectorAll('a[href^="#item-"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    // Scroll to target
-                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                <form id="lead-form" class="lead-form" method="POST" action="https://ec7f5297.sibforms.com/serve/MUIFAM_YkUzFIhRzG_c12JCHZKtnm0Ii829O1GdW-jTOBS3Zm9EUngS4EBTSZlLZ9SCWZl7Oi-MsbJmyX_-LPSxgSuMrg67ymzCUM-1t5t4Ws23DK3T4vEkBXJEeiNRoi1kPDqELscuUXTygoxuQZxqi1JtnClqnX3wI0GvJp3rmWyGElPYC23MJqBaB9DvZqaHaOIF7A8hSfx5brg==" data-type="subscription" novalidate>
+                    <input id="email-input" type="email" name="EMAIL" placeholder="Enter your work email" required data-i18n="email_placeholder" autocomplete="email">
                     
-                    // Open the accordion after a short delay
-                    setTimeout(() => {
-                        toggleAccordion(targetId);
-                    }, 400);
-                }
-            });
-        });
+                    <!-- Honeypot Bot Protection -->
+                    <input type="text" name="hp_field" class="hp-field" tabindex="-1" autocomplete="off">
+                    
+                    <button type="submit" class="btn-cta" id="cta-submit" data-i18n="cta_button">Get Early Access</button>
+                    <input type="text" name="email_address_check" value="" style="display:none !important;" class="input--hidden">
+                    <input type="hidden" name="locale" value="pt">
+                </form>
+                <p class="form-disclaimer" data-i18n="form_disclaimer">No spam. Unsubscribe anytime.</p>
+            </div>
+        </section>
+
+        <!-- Problem vs Solution -->
+        <section class="vs-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" data-i18n="vs_tag">The Problem</span>
+                    <h2 data-i18n="vs_title">Escape the Tab Graveyard</h2>
+                </div>
+                <div class="vs-grid">
+                    <div class="vs-card problem">
+                        <div class="vs-card-icon">💀</div>
+                        <h3 data-i18n="problem_title">The Friction</h3>
+                        <p data-i18n="problem_text">Constant context switching kills focus. Losing track of your tools in 50+ open tabs is costing you hours of deep work every week.</p>
+                    </div>
+                    <div class="vs-divider">→</div>
+                    <div class="vs-card solution">
+                        <div class="vs-card-icon">⚡</div>
+                        <h3 data-i18n="solution_title">The Solution</h3>
+                        <p data-i18n="solution_text">A floating layer for your most vital tools. Keep your AI, code, and tasks always in sight, regardless of which tab you are browsing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Showcase Section -->
+        <section id="showcase" class="product-showcase">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" data-i18n="showcase_tag">Live Preview</span>
+                    <h2 data-i18n="showcase_title">Experience Absolute Focus</h2>
+                </div>
+                
+                <div class="showcase-mockup-container">
+                    <div class="browser-mockup-wrapper">
+                        <div class="browser-mockup showcase-3d">
+                            <div class="carousel-container">
+                                <div class="carousel-track" id="carousel-track">
+                                    <img src="./assets/screenshots/layout-engine-1.png" alt="Showcase 1" class="carousel-slide">
+                                    <img src="./assets/screenshots/layout-engine-2.png" alt="Showcase 2" class="carousel-slide">
+                                    <img src="./assets/screenshots/layout-engine-3.png" alt="Showcase 3" class="carousel-slide">
+                                    <img src="./assets/screenshots/layout-engine-4.png" alt="Showcase 4" class="carousel-slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features — 4 columns forced -->
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" data-i18n="features_tag">What's Inside</span>
+                    <h2 data-i18n="features_title">Everything You Need, Floating</h2>
+                </div>
+
+                <!-- 4-col icon feature cards -->
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="feature_1_title">Omni-AI Assistant</h3>
+                        <p data-i18n="feature_1_desc">Instant access to Gemini AI in any window. Research and generate content without ever switching tabs.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="feature_2_title">Floating Code Editor</h3>
+                        <p data-i18n="feature_2_desc">A lightweight editor that stays visible over your docs. Code and learn simultaneously with zero friction.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 11 12 14 22 4"></polyline>
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="feature_3_title">Focus Flow Tasks</h3>
+                        <p data-i18n="feature_3_desc">Keep priorities always in sight. Integrated task management that doesn't hide behind other windows.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="feature_4_title">Smart PiP Media</h3>
+                        <p data-i18n="feature_4_desc">Transform tutorials and meetings into smart floating windows. Learn, watch, and execute in real-time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" data-i18n="testimonials_tag">Social Proof</span>
+                    <h2 data-i18n="testimonials_title">Trusted by High-Output Professionals</h2>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p data-i18n="testimonial_1_text">"FloatDeck reclaimed 2 hours of my daily workflow. Not having to hunt for the right tab among 40 windows is a productivity miracle."</p>
+                        <div class="user-info">
+                            <img src="./assets/avatars/avatar-1.jpg" alt="Mark R." class="user-avatar">
+                            <div>
+                                <strong data-i18n="testimonial_1_author">Mark R., Senior Backend Developer</strong>
+                                <p data-i18n="verified_user">Verified Beta User</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p data-i18n="testimonial_2_text">"The integration of Gemini right above my task list changed everything. It's the multi-tasking experience we've been promised for years."</p>
+                        <div class="user-info">
+                            <img src="./assets/avatars/avatar-2.jpeg" alt="Julia S." class="user-avatar">
+                            <div>
+                                <strong data-i18n="testimonial_2_author">Julia S., Product Designer</strong>
+                                <p data-i18n="verified_user">Verified Beta User</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta">
+            <div class="container">
+                <h2 data-i18n="final_cta_title">Ready to Reclaim Your Focus?</h2>
+                <p data-i18n="final_cta_sub">Join thousands of professionals who've already upgraded their workflow.</p>
+                <a href="#lead-form" class="btn-cta btn-cta-lg" data-i18n="cta_button">Get Early Access</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="logo" style="font-size:1.1rem;">Float<span>Deck</span></span>
+                <p data-i18n="footer_tagline">Elevate your browsing experience.</p>
+            </div>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <button class="footer-link-btn" id="btn-terms" data-i18n="footer_terms">Terms of Service</button>
+                <button class="footer-link-btn" id="btn-privacy" data-i18n="footer_privacy">Privacy Policy</button>
+                <a class="footer-link-btn" href="mailto:klarkzdev@gmail.com" data-i18n="footer_support">Support</a>
+            </nav>
+            <p class="footer-copy">&copy; 2026 FloatDeck. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Brevo Form Support -->
+    <script>
+        window.REQUIRED_CODE_ERROR_MESSAGE = 'Escolha um código de país';
+        window.LOCALE = 'pt';
+        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Formato de e-mail inválido.";
+        window.REQUIRED_ERROR_MESSAGE = "Este campo é obrigatório.";
+        window.GENERIC_INVALID_MESSAGE = "Formato inválido.";
     </script>
+    <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 </body>
 
 </html>
