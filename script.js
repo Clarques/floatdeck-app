@@ -2,20 +2,27 @@
 
 const translations = {
     en: {
+        // Hero
         hero_badge: "Elevate Your Beta Experience",
-        hero_title: "Transform Tab Chaos into Absolute Focus",
-        hero_subtitle: "Stop wasting time hunting for tools. FloatDeck unifies your AI, documentation, and tasks into smart floating panels.",
+        hero_title: "Multi-Task Like a Pro. <span>Without the Chaos.</span>",
+        hero_subtitle: "Stop drowning in a sea of tabs. FloatDeck unifies your AI, Code, Tasks, and Media into a single, fluid workspace that floats exactly where you need it.",
         email_placeholder: "Enter your work email",
-        cta_button: "Get Early Access →",
+        cta_button: "Get Early Access",
         form_disclaimer: "No spam. Unsubscribe anytime.",
-        vs_tag: "The Core Problem",
-        vs_title: "The End of Workflow Friction",
-        showcase_tag: "Live Preview",
-        showcase_title: "Experience Absolute Focus",
+        
+        // Problem vs Solution
+        vs_tag: "The Problem",
+        vs_title: "Escape the Tab Graveyard",
         problem_title: "The Friction",
         problem_text: "Constant context switching kills focus. Losing track of your tools in 50+ open tabs is costing you hours of deep work every week.",
         solution_title: "The Solution",
         solution_text: "A floating layer for your most vital tools. Keep your AI, code, and tasks always in sight, regardless of which tab you are browsing.",
+        
+        // Showcase
+        showcase_tag: "Live Preview",
+        showcase_title: "Experience Absolute Focus",
+        
+        // Features
         features_tag: "What's Inside",
         features_title: "Everything You Need, Floating",
         feature_1_title: "Omni-AI Assistant",
@@ -26,6 +33,8 @@ const translations = {
         feature_3_desc: "Keep priorities always in sight. Integrated task management that doesn't hide behind other windows.",
         feature_4_title: "Smart PiP Media",
         feature_4_desc: "Transform tutorials and meetings into smart floating windows. Learn, watch, and execute in real-time.",
+        
+        // Social Proof
         testimonials_tag: "Social Proof",
         testimonials_title: "Trusted by High-Output Professionals",
         testimonial_1_text: "\"FloatDeck reclaimed 2 hours of my daily workflow. Not having to hunt for the right tab among 40 windows is a productivity miracle.\"",
@@ -33,14 +42,22 @@ const translations = {
         testimonial_2_text: "\"The integration of Gemini right above my task list changed everything. It's the multi-tasking experience we've been promised for years.\"",
         testimonial_2_author: "Julia S., Product Designer",
         verified_user: "Verified Beta User",
+        
+        // Final CTA
         final_cta_title: "Ready to Reclaim Your Focus?",
         final_cta_sub: "Join thousands of professionals who've already upgraded their workflow.",
+        
+        // Footer
         footer_tagline: "Elevate your browsing experience.",
-        footer_privacy: "Privacy Policy",
         footer_terms: "Terms of Service",
+        footer_privacy: "Privacy Policy",
         footer_support: "Support",
+        
+        // UI Feedback
         loading: "Processing...",
         success_msg: "You're in! Check your email for early access instructions.",
+        
+        // Modals
         modal_privacy_title: "Privacy Policy",
         modal_terms_title: "Terms of Service",
         modal_last_updated: "Last Updated: May 2026",
@@ -70,20 +87,27 @@ const translations = {
         modal_terms_p5: "If you have any questions about these Terms, please contact: klarkzdev@gmail.com"
     },
     pt: {
+        // Hero
         hero_badge: "Eleve sua Experiência Beta",
-        hero_title: "Transforme o Caos das Abas em Foco Absoluto",
-        hero_subtitle: "Pare de perder tempo caçando ferramentas. O FloatDeck unifica sua IA, documentação e tarefas em painéis flutuantes inteligentes.",
+        hero_title: "Multi-Task Like a Pro. <span>Sem o Caos.</span>",
+        hero_subtitle: "Pare de se afogar em um mar de abas. O FloatDeck unifica sua IA, Código, Tarefas e Mídia em um único espaço de trabalho fluido que flutua exatamente onde você precisa.",
         email_placeholder: "Seu e-mail corporativo",
-        cta_button: "Obter Acesso Antecipado →",
+        cta_button: "Obter Acesso Antecipado",
         form_disclaimer: "Sem spam. Cancele quando quiser.",
-        vs_tag: "O Problema Central",
-        vs_title: "O Fim da Fricção no seu Workflow",
-        showcase_tag: "Demonstração Real",
-        showcase_title: "Experimente o Foco Absoluto",
+        
+        // Problem vs Solution
+        vs_tag: "O Problema",
+        vs_title: "Fuja do Cemitério de Abas",
         problem_title: "A Fricção",
         problem_text: "A troca constante de contexto destrói o foco. Perder suas ferramentas em mais de 50 abas abertas custa horas de trabalho profundo toda semana.",
         solution_title: "A Solução",
         solution_text: "Uma camada flutuante para suas ferramentas vitais. Mantenha sua IA, código e tarefas sempre à vista, independente da aba que estiver navegando.",
+        
+        // Showcase
+        showcase_tag: "Demonstração Real",
+        showcase_title: "Experimente o Foco Absoluto",
+        
+        // Features
         features_tag: "O Que Está Dentro",
         features_title: "Tudo o Que Você Precisa, Flutuando",
         feature_1_title: "Assistente Omni-IA",
@@ -94,6 +118,8 @@ const translations = {
         feature_3_desc: "Mantenha prioridades sempre à vista. Gestão de tarefas integrada que não se esconde atrás de outras janelas.",
         feature_4_title: "Mídia PiP Inteligente",
         feature_4_desc: "Transforme tutoriais e reuniões em janelas flutuantes inteligentes. Aprenda, assista e execute em tempo real.",
+        
+        // Social Proof
         testimonials_tag: "Prova Social",
         testimonials_title: "Confiado por Profissionais de Alta Performance",
         testimonial_1_text: "\"O FloatDeck recuperou 2 horas do meu fluxo diário. Não ter que caçar a aba certa entre 40 janelas é um milagre de produtividade.\"",
@@ -101,14 +127,22 @@ const translations = {
         testimonial_2_text: "\"A integração do Gemini logo acima da minha lista de tarefas mudou tudo. É a experiência multi-tarefa que nos prometeram há anos.\"",
         testimonial_2_author: "Julia S., Product Designer",
         verified_user: "Usuário Beta Verificado",
+        
+        // Final CTA
         final_cta_title: "Pronto para Recuperar seu Foco?",
         final_cta_sub: "Junte-se a milhares de profissionais que já atualizaram seu fluxo de trabalho.",
+        
+        // Footer
         footer_tagline: "Eleve sua experiência de navegação.",
-        footer_privacy: "Privacidade",
-        footer_terms: "Termos",
+        footer_terms: "Termos de Serviço",
+        footer_privacy: "Política de Privacidade",
         footer_support: "Suporte",
+        
+        // UI Feedback
         loading: "Processando...",
         success_msg: "Você está dentro! Verifique seu e-mail para as instruções de acesso.",
+        
+        // Modals
         modal_privacy_title: "Política de Privacidade",
         modal_terms_title: "Termos de Serviço",
         modal_last_updated: "Última Atualização: Maio de 2026",
@@ -134,24 +168,31 @@ const translations = {
         modal_terms_p3: "Em nenhum caso o FloatDeck ou seus desenvolvedores serão responsáveis por quaisquer danos indiretos, incidentais ou consequentes, incluindo perda de dados ou produtividade, decorrentes do uso ou incapacidade de usar a extensão.",
         modal_terms_h4: "4. Responsabilidades do Usuário",
         modal_terms_p4: "Você é responsável pelo uso das ferramentas de terceiros embutidas no FloatDeck. Você concorda em não usar a extensão para atividades ilícitas ou para violar os termos dos serviços que acessa através de nossas janelas flutuantes.",
-        modal_terms_h5: "5. Contato",
+        modal_terms_h5: "5. Contacto",
         modal_terms_p5: "Se você tiver alguma dúvida sobre estes Termos, entre em contato: klarkzdev@gmail.com"
     },
     es: {
+        // Hero
         hero_badge: "Eleva tu Experiencia Beta",
-        hero_title: "Transforma el Caos de las Pestañas en Enfoque Absoluto",
-        hero_subtitle: "Deja de perder tiempo buscando herramientas. FloatDeck unifica tu IA, documentación y tareas en paneles flotantes inteligentes.",
+        hero_title: "Multi-Task Like a Pro. <span>Sin el Caos.</span>",
+        hero_subtitle: "Deja de ahogarte en un mar de pestañas. FloatDeck unifica tu IA, Código, Tareas y Medios en un único espacio de trabajo fluido que flota exactamente donde lo necesitas.",
         email_placeholder: "Tu email corporativo",
-        cta_button: "Obtener Acceso Anticipado →",
+        cta_button: "Obtener Acceso Anticipado",
         form_disclaimer: "Sin spam. Cancela cuando quieras.",
-        vs_tag: "El Problema Central",
-        vs_title: "El Fin de la Fricción en tu Flujo de Trabajo",
-        showcase_tag: "Vista Previa",
-        showcase_title: "Experimenta el Enfoque Absoluto",
+        
+        // Problem vs Solution
+        vs_tag: "El Problema",
+        vs_title: "Escapa del Cementerio de Pestañas",
         problem_title: "La Fricción",
         problem_text: "El cambio constante de contexto destruye el enfoque. Perder tus herramientas en más de 50 pestañas abiertas te cuesta horas de trabajo profundo cada semana.",
         solution_title: "La Solución",
         solution_text: "Una capa flotante para tus herramientas más vitales. Mantén tu IA, código y tareas siempre a la vista, sin importar qué pestaña estés navegando.",
+        
+        // Showcase
+        showcase_tag: "Vista Previa",
+        showcase_title: "Experimenta el Enfoque Absoluto",
+        
+        // Features
         features_tag: "Lo Que Hay Dentro",
         features_title: "Todo lo que Necesitas, Flotando",
         feature_1_title: "Asistente Omni-IA",
@@ -162,6 +203,8 @@ const translations = {
         feature_3_desc: "Mantén prioridades siempre a la vista. Gestión de tareas integrada que no se esconde tras otras ventanas.",
         feature_4_title: "Medios PiP Inteligentes",
         feature_4_desc: "Transforma tutoriales y reuniones en ventanas flotantes inteligentes. Aprende, mira y ejecuta en tiempo real.",
+        
+        // Social Proof
         testimonials_tag: "Prueba Social",
         testimonials_title: "Confiado por Profesionales de Alto Rendimiento",
         testimonial_1_text: "\"FloatDeck recuperó 2 horas de mi flujo diario. No tener que buscar la pestaña correcta entre 40 ventanas es un milagro de productividad.\"",
@@ -169,14 +212,22 @@ const translations = {
         testimonial_2_text: "\"La integración de Gemini justo encima de mi lista de tareas lo cambió todo. Es la experiencia multitarea que nos prometieron por años.\"",
         testimonial_2_author: "Julia S., Diseñadora de Producto",
         verified_user: "Usuario Beta Verificado",
+        
+        // Final CTA
         final_cta_title: "¿Listo para Recuperar tu Enfoque?",
         final_cta_sub: "Únete a miles de profesionales que ya han mejorado su flujo de trabajo.",
+        
+        // Footer
         footer_tagline: "Eleva tu experiencia de navegación.",
-        footer_privacy: "Privacidad",
-        footer_terms: "Términos",
+        footer_terms: "Términos de Servicio",
+        footer_privacy: "Política de Privacidad",
         footer_support: "Soporte",
+        
+        // UI Feedback
         loading: "Procesando...",
         success_msg: "¡Ya estás dentro! Revisa tu email para las instrucciones de acceso.",
+        
+        // Modals
         modal_privacy_title: "Política de Privacidad",
         modal_terms_title: "Términos de Servicio",
         modal_last_updated: "Última Actualización: Mayo de 2026",
@@ -241,16 +292,22 @@ function initI18n() {
 }
 
 function setLang(lang) {
-    const data = translations[lang];
+    // Primary language object with fallback to 'en' if the requested language doesn't exist
+    const data = translations[lang] || translations['en'];
     if (!data) return;
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (!data[key]) return;
+        
+        // Final fallback: if key is missing in target language, use English key
+        const text = data[key] || (translations['en'] ? translations['en'][key] : null);
+        
+        if (!text) return;
+
         if (el.tagName === 'INPUT') {
-            el.placeholder = data[key];
+            el.placeholder = text;
         } else {
-            el.innerHTML = data[key];
+            el.innerHTML = text;
         }
     });
 
@@ -320,7 +377,7 @@ function initForm() {
         // 1. Honeypot check (Bot protection)
         if (honeypot && honeypot.value) {
             form.reset();
-            showToast(translations[lang]?.success_msg || 'Success!');
+            showToast(translations[lang]?.success_msg || translations['en'].success_msg);
             return;
         }
 
@@ -333,7 +390,7 @@ function initForm() {
         }
         const original = btn.innerHTML;
         btn.disabled = true;
-        btn.innerHTML = `<span class="spinner"></span> ${translations[lang]?.loading || 'Processing...'}`;
+        btn.innerHTML = `<span class="spinner"></span> ${translations[lang]?.loading || translations['en'].loading}`;
 
         try {
             const formData = new FormData(form);
@@ -347,11 +404,11 @@ function initForm() {
 
             // UI feedback
             form.reset();
-            showToast(translations[lang]?.success_msg || 'Success!');
+            showToast(translations[lang]?.success_msg || translations['en'].success_msg);
         } catch (err) {
             // Silently handle or show success (no-cors often opaque)
             form.reset();
-            showToast(translations[lang]?.success_msg || 'Success!');
+            showToast(translations[lang]?.success_msg || translations['en'].success_msg);
         } finally {
             btn.disabled = false;
             btn.innerHTML = original;
@@ -360,7 +417,7 @@ function initForm() {
 }
 
 // =============================================
-// TOAST NOTIFICATION (replaces alert)
+// TOAST NOTIFICATION
 // =============================================
 function showToast(msg) {
     const t = document.createElement('div');
@@ -422,6 +479,7 @@ function closeModal(id) {
     const modal = document.getElementById(id);
     if (modal) modal.classList.remove('open');
 }
+
 // =============================================
 // PRODUCT SHOWCASE CAROUSEL
 // =============================================
