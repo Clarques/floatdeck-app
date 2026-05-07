@@ -87,27 +87,20 @@ const translations = {
         modal_terms_p5: "If you have any questions about these Terms, please contact: klarkzdev@gmail.com"
     },
     pt: {
-        // Hero
         hero_badge: "Eleve sua Experiência Beta",
         hero_title: "Multi-Task Like a Pro. <span>Sem o Caos.</span>",
         hero_subtitle: "Pare de se afogar em um mar de abas. O FloatDeck unifica sua IA, Código, Tarefas e Mídia em um único espaço de trabalho fluido que flutua exatamente onde você precisa.",
         email_placeholder: "Seu e-mail corporativo",
         cta_button: "Obter Acesso Antecipado",
         form_disclaimer: "Sem spam. Cancele quando quiser.",
-        
-        // Problem vs Solution
         vs_tag: "O Problema",
         vs_title: "Fuja do Cemitério de Abas",
         problem_title: "A Fricção",
         problem_text: "A troca constante de contexto destrói o foco. Perder suas ferramentas em mais de 50 abas abertas custa horas de trabalho profundo toda semana.",
         solution_title: "A Solução",
         solution_text: "Uma camada flutuante para suas ferramentas vitais. Mantenha sua IA, código e tarefas sempre à vista, independente da aba que estiver navegando.",
-        
-        // Showcase
         showcase_tag: "Demonstração Real",
         showcase_title: "Experimente o Foco Absoluto",
-        
-        // Features
         features_tag: "O Que Está Dentro",
         features_title: "Tudo o Que Você Precisa, Flutuando",
         feature_1_title: "Assistente Omni-IA",
@@ -118,8 +111,6 @@ const translations = {
         feature_3_desc: "Mantenha prioridades sempre à vista. Gestão de tarefas integrada que não se esconde atrás de outras janelas.",
         feature_4_title: "Mídia PiP Inteligente",
         feature_4_desc: "Transforme tutoriais e reuniões em janelas flutuantes inteligentes. Aprenda, assista e execute em tempo real.",
-        
-        // Social Proof
         testimonials_tag: "Prova Social",
         testimonials_title: "Confiado por Profissionais de Alta Performance",
         testimonial_1_text: "\"O FloatDeck recuperou 2 horas do meu fluxo diário. Não ter que caçar a aba certa entre 40 janelas é um milagre de produtividade.\"",
@@ -127,22 +118,14 @@ const translations = {
         testimonial_2_text: "\"A integração do Gemini logo acima da minha lista de tarefas mudou tudo. É a experiência multi-tarefa que nos prometeram há anos.\"",
         testimonial_2_author: "Julia S., Product Designer",
         verified_user: "Usuário Beta Verificado",
-        
-        // Final CTA
         final_cta_title: "Pronto para Recuperar seu Foco?",
         final_cta_sub: "Junte-se a milhares de profissionais que já atualizaram seu fluxo de trabalho.",
-        
-        // Footer
         footer_tagline: "Eleve sua experiência de navegação.",
         footer_terms: "Termos de Serviço",
         footer_privacy: "Política de Privacidade",
         footer_support: "Suporte",
-        
-        // UI Feedback
         loading: "Processando...",
         success_msg: "Você está dentro! Verifique seu e-mail para as instruções de acesso.",
-        
-        // Modals
         modal_privacy_title: "Política de Privacidade",
         modal_terms_title: "Termos de Serviço",
         modal_last_updated: "Última Atualização: Maio de 2026",
@@ -172,27 +155,20 @@ const translations = {
         modal_terms_p5: "Se você tiver alguma dúvida sobre estes Termos, entre em contato: klarkzdev@gmail.com"
     },
     es: {
-        // Hero
         hero_badge: "Eleva tu Experiencia Beta",
         hero_title: "Multi-Task Like a Pro. <span>Sin el Caos.</span>",
         hero_subtitle: "Deja de ahogarte en un mar de pestañas. FloatDeck unifica tu IA, Código, Tareas y Medios en un único espacio de trabajo fluido que flota exactamente donde lo necesitas.",
         email_placeholder: "Tu email corporativo",
         cta_button: "Obtener Acceso Anticipado",
         form_disclaimer: "Sin spam. Cancela cuando quieras.",
-        
-        // Problem vs Solution
         vs_tag: "El Problema",
         vs_title: "Escapa del Cementerio de Pestañas",
         problem_title: "La Fricción",
         problem_text: "El cambio constante de contexto destruye el enfoque. Perder tus herramientas en más de 50 pestañas abiertas te cuesta horas de trabajo profundo cada semana.",
         solution_title: "La Solución",
         solution_text: "Una capa flotante para tus herramientas más vitales. Mantén tu IA, código y tareas siempre a la vista, sin importar qué pestaña estés navegando.",
-        
-        // Showcase
         showcase_tag: "Vista Previa",
         showcase_title: "Experimenta el Enfoque Absoluto",
-        
-        // Features
         features_tag: "Lo Que Hay Dentro",
         features_title: "Todo lo que Necesitas, Flotando",
         feature_1_title: "Asistente Omni-IA",
@@ -203,8 +179,6 @@ const translations = {
         feature_3_desc: "Mantén prioridades siempre a la vista. Gestión de tareas integrada que no se esconde tras otras ventanas.",
         feature_4_title: "Medios PiP Inteligentes",
         feature_4_desc: "Transforma tutoriales y reuniones en ventanas flotantes inteligentes. Aprende, mira y ejecuta en tiempo real.",
-        
-        // Social Proof
         testimonials_tag: "Prueba Social",
         testimonials_title: "Confiado por Profesionales de Alto Rendimiento",
         testimonial_1_text: "\"FloatDeck recuperó 2 horas de mi flujo diario. No tener que buscar la pestaña correcta entre 40 ventanas es un milagro de productividad.\"",
@@ -212,22 +186,14 @@ const translations = {
         testimonial_2_text: "\"La integración de Gemini justo encima de mi lista de tareas lo cambió todo. Es la experiencia multitarea que nos prometieron por años.\"",
         testimonial_2_author: "Julia S., Diseñadora de Producto",
         verified_user: "Usuario Beta Verificado",
-        
-        // Final CTA
         final_cta_title: "¿Listo para Recuperar tu Enfoque?",
         final_cta_sub: "Únete a miles de profesionales que ya han mejorado su flujo de trabajo.",
-        
-        // Footer
         footer_tagline: "Eleva tu experiencia de navegación.",
         footer_terms: "Términos de Servicio",
-        footer_privacy: "Política de Privacidad",
+        footer_privacy: "Política de Privacidade",
         footer_support: "Soporte",
-        
-        // UI Feedback
         loading: "Procesando...",
         success_msg: "¡Ya estás dentro! Revisa tu email para las instrucciones de acceso.",
-        
-        // Modals
         modal_privacy_title: "Política de Privacidad",
         modal_terms_title: "Términos de Servicio",
         modal_last_updated: "Última Actualización: Mayo de 2026",
@@ -238,7 +204,7 @@ const translations = {
         modal_privacy_p2_intro: "Para proporcionar nuestra funcionalidad principal, FloatDeck requiere los siguientes permisos de alcance mínimo:",
         modal_privacy_li1: "Pestañas y Ventanas: Usadas exclusivamente para facilitar la funcionalidad del panel flotante y administrar tu espacio de trabajo activo. No rastreamos ni registramos las URL o el contenido de las pestañas que visitas.",
         modal_privacy_li2: "Almacenamiento: Usado estrictamente para guardar tus preajustes de diseño definidos por el usuario y preferencias de tema localmente en tu dispositivo. Ningún dato sale de tu navegador.",
-        modal_privacy_h3: "3. Servicios de Terceros",
+        modal_privacy_h3: "3. Terceros Servicios",
         modal_privacy_p3: "FloatDeck se integra con herramientas de terceros (como asistentes de IA o reproductores de video) a través de interfaces web estándar. Tu interacción con estas herramientas integradas se rige por sus respectivas políticas de privacidad. FloatDeck no actúa como un intermediario para interceptar estos datos.",
         modal_privacy_h4: "4. Cambios en esta Política",
         modal_privacy_p4: "Podemos actualizar esta política ocasionalmente. Cualquier cambio se reflejará con una fecha actualizada.",
@@ -276,30 +242,39 @@ document.addEventListener('DOMContentLoaded', () => {
 // =============================================
 function initI18n() {
     const langSelector = document.getElementById('lang-selector');
-    const saved = localStorage.getItem('lang');
+    let saved = null;
+    
+    // Task 3: Persistence Defense & Cleanup
+    try {
+        saved = localStorage.getItem('lang');
+    } catch (e) {
+        localStorage.clear();
+    }
+
     const browser = navigator.language.split('-')[0];
     const supported = ['en', 'pt', 'es'];
     const active = supported.includes(saved || browser) ? (saved || browser) : 'en';
 
     setLang(active);
-    langSelector.value = active;
+    if (langSelector) langSelector.value = active;
 
-    langSelector.addEventListener('change', e => {
-        const lang = e.target.value;
-        localStorage.setItem('lang', lang);
-        setLang(lang);
-    });
+    if (langSelector) {
+        langSelector.addEventListener('change', e => {
+            const lang = e.target.value;
+            localStorage.setItem('lang', lang);
+            setLang(lang);
+        });
+    }
 }
 
 function setLang(lang) {
-    // Primary language object with fallback to 'en' if the requested language doesn't exist
     const data = translations[lang] || translations['en'];
     if (!data) return;
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         
-        // Final fallback: if key is missing in target language, use English key
+        // Task 2: Protection/Fallback Logic
         const text = data[key] || (translations['en'] ? translations['en'][key] : null);
         
         if (!text) return;
@@ -322,11 +297,13 @@ function initTheme() {
     const saved = localStorage.getItem('theme') || 'dark';
     applyTheme(saved);
 
-    btn.addEventListener('click', () => {
-        const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-        applyTheme(next);
-        localStorage.setItem('theme', next);
-    });
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            applyTheme(next);
+            localStorage.setItem('theme', next);
+        });
+    }
 }
 
 function applyTheme(theme) {
@@ -342,7 +319,6 @@ function initAnimations() {
     const observer = new IntersectionObserver(entries => {
         entries.forEach((entry, i) => {
             if (entry.isIntersecting) {
-                // Stagger delay for feature cards
                 const delay = entry.target.classList.contains('feature-card')
                     ? Array.from(document.querySelectorAll('.feature-card')).indexOf(entry.target) * 80
                     : 0;
@@ -365,48 +341,44 @@ function initForm() {
     const btn = form.querySelector('button');
     const input = document.getElementById('email-input');
 
-    input.addEventListener('input', () => {
-        input.style.borderBottomColor = '';
-    });
+    if (input) {
+        input.addEventListener('input', () => {
+            input.style.borderBottomColor = '';
+        });
+    }
 
     form.addEventListener('submit', async e => {
         e.preventDefault();
         const honeypot = form.querySelector('input[name="hp_field"]');
         const lang = document.documentElement.lang || 'en';
 
-        // 1. Honeypot check (Bot protection)
         if (honeypot && honeypot.value) {
             form.reset();
             showToast(translations[lang]?.success_msg || translations['en'].success_msg);
             return;
         }
 
-        // 2. Strict Regex Validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(input.value)) {
+        if (input && !emailRegex.test(input.value)) {
             input.style.borderBottomColor = 'var(--error)';
             input.focus();
             return;
         }
+        
         const original = btn.innerHTML;
         btn.disabled = true;
         btn.innerHTML = `<span class="spinner"></span> ${translations[lang]?.loading || translations['en'].loading}`;
 
         try {
             const formData = new FormData(form);
-            
-            // Background submit to Brevo
             await fetch(form.action, {
                 method: 'POST',
                 body: formData,
                 mode: 'no-cors'
             });
-
-            // UI feedback
             form.reset();
             showToast(translations[lang]?.success_msg || translations['en'].success_msg);
         } catch (err) {
-            // Silently handle or show success (no-cors often opaque)
             form.reset();
             showToast(translations[lang]?.success_msg || translations['en'].success_msg);
         } finally {
@@ -455,14 +427,12 @@ function initModals() {
         });
     }
 
-    // Close on overlay click
     document.querySelectorAll('.modal-overlay').forEach(overlay => {
         overlay.addEventListener('click', e => {
             if (e.target === overlay) overlay.classList.remove('open');
         });
     });
 
-    // Close on Escape key
     document.addEventListener('keydown', e => {
         if (e.key === 'Escape') {
             document.querySelectorAll('.modal-overlay.open').forEach(m => m.classList.remove('open'));
@@ -487,7 +457,6 @@ function initCarousel() {
     const track = document.getElementById('carousel-track');
     if (!track || !track.firstElementChild) return;
 
-    // Clone first slide for infinite effect
     const firstClone = track.firstElementChild.cloneNode(true);
     track.appendChild(firstClone);
 
@@ -503,7 +472,6 @@ function initCarousel() {
         track.style.transition = 'transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1)';
         track.style.transform = `translateX(-${currentIndex * 100}%)`;
 
-        // When at clone, jump back to real first slide silently
         track.addEventListener('transitionend', function handleTransition() {
             if (currentIndex === slides.length - 1) {
                 track.style.transition = 'none';
@@ -530,19 +498,15 @@ function initScroll() {
             
             const target = document.querySelector(targetId);
             if (target) {
-                // Smooth scroll to target
                 target.scrollIntoView({
                     behavior: 'smooth',
                     block: 'center'
                 });
                 
-                // Auto-focus email input
                 const emailInput = document.getElementById('email-input');
                 if (emailInput) {
-                    // Delay focus to wait for scroll animation
                     setTimeout(() => {
                         emailInput.focus();
-                        // Visual feedback hint
                         emailInput.style.borderBottomColor = 'var(--primary)';
                         setTimeout(() => emailInput.style.borderBottomColor = '', 1000);
                     }, 800);
