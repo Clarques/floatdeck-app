@@ -402,6 +402,13 @@
             btnPrivacy.addEventListener('click', () => openModal('modal-privacy'));
         }
 
+        document.querySelectorAll('.modal-close').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const modal = btn.closest('.modal-overlay');
+                if (modal) modal.classList.remove('open');
+            });
+        });
+
         document.querySelectorAll('.modal-overlay').forEach(overlay => {
             overlay.addEventListener('click', e => {
                 if (e.target === overlay) overlay.classList.remove('open');
@@ -418,6 +425,11 @@
     function openModal(id) {
         const modal = document.getElementById(id);
         if (modal) modal.classList.add('open');
+    }
+
+    function closeModal(id) {
+        const modal = document.getElementById(id);
+        if (modal) modal.classList.remove('open');
     }
 
     function initCarousel() {
