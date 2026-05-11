@@ -581,15 +581,18 @@ h1 span {
    FINAL CTA SECTION
    ============================================= */
 .final-cta {
-    padding: 100px 0;
+    padding: 160px 0;
     text-align: center;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .final-cta::before {
     content: '';
     position: absolute; inset: 0;
-    background: radial-gradient(ellipse at 50% 100%, rgba(124,58,237,0.12) 0%, transparent 70%);
+    background: radial-gradient(ellipse at 50% 50%, rgba(124,58,237,0.15) 0%, transparent 75%);
     pointer-events: none;
 }
 .final-cta h2 { font-size: clamp(1.8rem, 4vw, 3rem); margin-bottom: 1rem; }

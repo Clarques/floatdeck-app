@@ -13,7 +13,9 @@
             hero_subtitle: "Stop drowning in a sea of tabs. FloatDeck unifies your AI, Code, Tasks, and Media into a single, fluid workspace that floats exactly where you need it.",
             email_placeholder: "Enter your work email",
             cta_button: "Get Early Access",
+            install_cta: "Free Installation",
             form_disclaimer: "No spam. Unsubscribe anytime.",
+            hero_disclaimer: "Optimized for Chrome & Edge",
             vs_tag: "The Problem",
             vs_title: "Escape the Tab Graveyard",
             problem_title: "The Friction",
@@ -81,7 +83,9 @@
             hero_subtitle: "Pare de se afogar em um mar de abas. O FloatDeck unifica sua IA, Código, Tarefas e Mídia em um único espaço de trabalho fluido que flutua exatamente onde você precisa.",
             email_placeholder: "Seu e-mail corporativo",
             cta_button: "Obter Acesso Antecipado",
+            install_cta: "Instalação Grátis",
             form_disclaimer: "Sem spam. Cancele quando quiser.",
+            hero_disclaimer: "Otimizado para Chrome e Edge",
             vs_tag: "O Problema",
             vs_title: "Fuja do Cemitério de Abas",
             problem_title: "A Fricção",
@@ -149,7 +153,9 @@
             hero_subtitle: "Deja de ahogarte en un mar de pestañas. FloatDeck unifica tu IA, Código, Tareas y Medios en un único espacio de trabajo fluido que flota exactamente donde lo necesitas.",
             email_placeholder: "Tu email corporativo",
             cta_button: "Obtener Acceso Anticipado",
+            install_cta: "Instalación Gratis",
             form_disclaimer: "Sin spam. Cancela cuando quieras.",
+            hero_disclaimer: "Optimizado para Chrome y Edge",
             vs_tag: "El Problema",
             vs_title: "Escapa del Cementerio de Pestañas",
             problem_title: "La Fricción",
@@ -454,14 +460,6 @@
                 const target = document.querySelector(targetId);
                 if (target) {
                     target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    const emailInput = document.getElementById('email-input');
-                    if (emailInput) {
-                        setTimeout(() => {
-                            emailInput.focus();
-                            emailInput.style.borderBottomColor = 'var(--primary)';
-                            setTimeout(() => emailInput.style.borderBottomColor = '', 1000);
-                        }, 800);
-                    }
                 }
             });
         });
