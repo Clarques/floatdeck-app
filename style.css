@@ -3,7 +3,7 @@
    Senior UI/UX · CRO Optimized · Mobile-First
    ============================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Caveat:wght@700&display=swap');
 
 /* ---- TOKENS ---- */
 :root {
@@ -12,15 +12,15 @@
     --surface:        #13131f;
     --surface-2:      #1a1a2e;
     --border:         rgba(255,255,255,0.07);
-    --border-hover:   rgba(124,58,237,0.5);
+    --border-hover:   rgba(168,128,255,0.5);
     --text:           #f0f0ff;
     --text-dim:       #8888aa;
     --text-muted:     #55556a;
-    --primary:        #7c3aed;
-    --primary-light:  #9b5fff;
-    --primary-glow:   rgba(124,58,237,0.35);
-    --accent:         #10b981;
-    --accent-glow:    rgba(16,185,129,0.25);
+    --primary:        #a880ff;
+    --primary-light:  #c2a3ff;
+    --primary-glow:   rgba(168,128,255,0.35);
+    --accent:         #56d8ff;
+    --accent-glow:    rgba(86,216,255,0.25);
     --error:          #f87171;
 
     --radius-sm:  10px;
@@ -109,14 +109,34 @@ a { text-decoration: none; }
 
 .logo {
     font-size: 1.4rem;
-    font-weight: 900;
-    color: var(--text);
-    letter-spacing: -0.04em;
+    font-weight: 500;
+    color: var(--primary);
+    letter-spacing: -0.01em;
     display: flex;
     align-items: center;
     gap: 8px;
 }
-.logo span { color: var(--primary-light); }
+.logo svg { color: var(--primary); }
+.logo-text {
+    display: inline-flex;
+    align-items: baseline;
+    color: var(--primary);
+}
+.logo-text span { 
+    color: var(--text); 
+    font-weight: 800;
+    margin-left: 1px;
+}
+
+.beta-tag {
+    font-family: 'Caveat', cursive;
+    font-size: 1.1rem;
+    color: var(--text);
+    transform: rotate(-10deg);
+    margin-left: 4px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    display: inline-block;
+}
 
 .nav-actions { display: flex; align-items: center; gap: 12px; }
 
@@ -596,7 +616,8 @@ h1 span {
     pointer-events: none;
 }
 .final-cta h2 { font-size: clamp(1.8rem, 4vw, 3rem); margin-bottom: 1rem; }
-.final-cta > .container > p { font-size: 1.1rem; margin-bottom: 2.5rem; }
+.final-cta .hero-sub { font-size: 1.1rem; margin-bottom: 2.5rem; }
+.final-cta .form-disclaimer { margin-bottom: 0; }
 
 /* =============================================
    FOOTER
