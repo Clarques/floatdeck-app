@@ -377,7 +377,7 @@ h1 span {
 
 .vs-card.problem  { border-color: rgba(248,113,113,0.2); }
 .vs-card.solution { border-color: rgba(16,185,129,0.3); }
-.vs-card.solution h3 { color: var(--accent); }
+.vs-card.solution h3 { color: var(--primary); }
 
 /* =============================================
    PRODUCT SHOWCASE
